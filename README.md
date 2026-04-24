@@ -1,6 +1,6 @@
-# <span style="color:white">Mind</span><span style="color:#7C6AF7">Mesh.</span>
-
-> **The Multi-Agent Adversarial Reasoning Engine**
+<p align="center">
+  <img src="./banner.svg" alt="MindMesh — The Multi-Agent Adversarial Reasoning Engine" width="100%"/>
+</p>
 
 MindMesh is a sophisticated AI orchestration platform that eliminates hallucinations and bias by forcing multiple Large Language Models (LLMs) into a structured, adversarial debate. It doesn't just ask an AI for an answer—it stress-tests the logic through a rigorous multi-stage verification process.
 
