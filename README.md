@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Soumik22-tech/Maieo AI/main/banner.svg" alt="Maieo AI — Multi-Agent Adversarial Reasoning Engine" width="100%"/>
+  <img src="https://raw.githubusercontent.com/Soumik22-tech/MaieoAI/refs/heads/main/banner.svg" alt="Maieo AI — Multi-Agent Adversarial Reasoning Engine" width="100%"/>
 </p>
 
 <p align="center">
@@ -108,14 +108,14 @@ Your Question
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/Soumik22-tech/Maieo AI.git
-cd Maieo AI
+git clone https://github.com/Soumik22-tech/MaieoAI.git
+cd Maieo
 ```
 
 ### 2. Set up the backend
 
 ```bash
-cd mindmesh
+cd maieo
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -e .
@@ -138,15 +138,15 @@ cp .env.example .env
 ### 4. Run the backend
 
 ```bash
-uvicorn mindmesh.server:app --host 0.0.0.0 --port 8000
+uvicorn maieo.server:app --host 0.0.0.0 --port 8000
 ```
 
 ### 5. Set up and run the frontend
 
 ```bash
-cd ../mindmesh-web
+cd ../maieo-web
 npm install
-# Add your keys to .env.local (see mindmesh-web/.env.example)
+# Add your keys to .env.local (see maieo-web/.env.example)
 npm run dev
 ```
 
@@ -158,7 +158,7 @@ Open [http://localhost:3000](http://localhost:3000) — ask anything.
 
 ```
 Maieo AI/
-├── mindmesh/                  # Python backend
+├── maieo/                  # Python backend
 │   ├── agents/
 │   │   ├── proposer.py        # Llama 3.3 70B via Groq
 │   │   ├── challenger.py      # Gemma 3 27B via Google
@@ -170,7 +170,7 @@ Maieo AI/
 │   │   └── router.py          # Multi-provider LLM router
 │   └── server.py              # FastAPI app
 │
-├── mindmesh-web/              # Next.js 15 frontend
+├── maieo-web/              # Next.js 15 frontend
 │   ├── app/                   # App Router pages
 │   ├── components/            # UI components
 │   ├── lib/                   # API client, DB, storage
@@ -230,7 +230,7 @@ MIT — free to use, modify, and distribute.
 
 If you use Maieo AI as a base for your project, please include:
 
-[![Built on Maieo AI](https://img.shields.io/badge/Built%20on-Maieo AI%20AI-7c6af7?style=flat&labelColor=0d0b1e)](https://github.com/Soumik22-tech/Maieo AI)
+[![Built on Maieo AI](https://img.shields.io/badge/Built%20on-Maieo%20AI-7c6af7?style=flat&labelColor=0d0b1e)](https://github.com/Soumik22-tech/MaieoAI)
 
 This project was originally created by [Soumik](https://github.com/Soumik22-tech).
 
