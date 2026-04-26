@@ -1,5 +1,5 @@
 """
-MindMesh AI FastAPI Server
+Maieo AI FastAPI Server
 Production-ready server for Render.com deployment.
 """
 import os
@@ -17,13 +17,13 @@ class DebateRequest(BaseModel):
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    print("MindMesh AI API starting up...")
+    print("Maieo AI API starting up...")
     yield
-    print("MindMesh AI API shutting down.")
+    print("Maieo AI API shutting down.")
 
 
 app = FastAPI(
-    title="MindMesh AI API",
+    title="Maieo AI API",
     description="Multi-agent AI debate engine",
     version="1.0.0",
     lifespan=lifespan,
@@ -48,11 +48,10 @@ app.add_middleware(
 async def health():
     return {
         "status": "ok",
-        "project": "MindMesh AI",
-        "version": "1.0.0",
-        "author": "Soumik22-tech",
-        "github": "https://github.com/Soumik22-tech/MindMesh",
+        "app": "Maieo AI",
         "agents": 4,
+        "author": "Soumik22-tech",
+        "github": "https://github.com/Soumik22-tech/Maieo AI",
         "models": {
             "proposer": "llama-3.3-70b via Groq",
             "challenger": "gemma-3-27b via Google",

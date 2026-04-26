@@ -52,7 +52,7 @@ def print_pretty_result(result: DebateResult):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="MindMesh AI Multi-Agent Debate CLI")
+    parser = argparse.ArgumentParser(description="Maieo AI Multi-Agent Debate CLI")
     parser.add_argument("query", type=str, help="The debate question")
     parser.add_argument("--rounds", type=int, default=1, help="Number of debate rounds (currently only 1 supported)")
     parser.add_argument("--output", type=str, choices=["pretty", "json"], default="pretty", help="Output format")

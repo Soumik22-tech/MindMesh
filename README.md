@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Soumik22-tech/MindMesh/main/banner.svg" alt="MindMesh AI — Multi-Agent Adversarial Reasoning Engine" width="100%"/>
+  <img src="https://raw.githubusercontent.com/Soumik22-tech/Maieo AI/main/banner.svg" alt="Maieo AI — Multi-Agent Adversarial Reasoning Engine" width="100%"/>
 </p>
 
 <p align="center">
@@ -16,7 +16,7 @@
 
 <p align="center">
   <b>What if AI answers were stress-tested before you saw them?</b><br/>
-  MindMesh AI forces 4 specialized AI models to argue, challenge, judge, and synthesize —<br/>
+  Maieo AI forces 4 specialized AI models to argue, challenge, judge, and synthesize —<br/>
   producing answers that are demonstrably more accurate than any single model alone.
 </p>
 
@@ -30,7 +30,7 @@ Every chatbot you've used — ChatGPT, Gemini, Claude — gives you **one answer
 
 If that model hallucinates, oversimplifies, or has a blind spot, you get a confident wrong answer with no warning.
 
-**MindMesh AI breaks this pattern entirely.**
+**Maieo AI breaks this pattern entirely.**
 
 ---
 
@@ -108,8 +108,8 @@ Your Question
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/Soumik22-tech/MindMesh.git
-cd MindMesh
+git clone https://github.com/Soumik22-tech/Maieo AI.git
+cd Maieo AI
 ```
 
 ### 2. Set up the backend
@@ -157,7 +157,7 @@ Open [http://localhost:3000](http://localhost:3000) — ask anything.
 ## ✦ Project Structure
 
 ```
-MindMesh AI/
+Maieo AI/
 ├── mindmesh/                  # Python backend
 │   ├── agents/
 │   │   ├── proposer.py        # Llama 3.3 70B via Groq
@@ -186,7 +186,7 @@ MindMesh AI/
 
 ## ✦ Why Four Different Providers?
 
-Most multi-agent systems use one provider for all agents. MindMesh AI deliberately uses **four different AI providers** so no single company's biases dominate the debate. Groq brings speed. Google brings breadth. Cerebras brings reasoning depth. The diversity is the feature.
+Most multi-agent systems use one provider for all agents. Maieo AI deliberately uses **four different AI providers** so no single company's biases dominate the debate. Groq brings speed. Google brings breadth. Cerebras brings reasoning depth. The diversity is the feature.
 
 ---
 
@@ -195,9 +195,9 @@ Most multi-agent systems use one provider for all agents. MindMesh AI deliberate
 - [ ] Multi-round debates (agents respond to each other's rebuttals)
 - [ ] Export debates as PDF
 - [ ] Pro mode with GPT-4o, Claude 3.5, o3-mini
-- [ ] MindMesh AI API — debate-as-a-service for developers
+- [ ] Maieo AI API — debate-as-a-service for developers
 - [ ] Discord bot integration
-- [ ] Benchmark mode — compare MindMesh AI vs single LLM accuracy
+- [ ] Benchmark mode — compare Maieo AI vs single LLM accuracy
 
 ---
 
@@ -228,9 +228,9 @@ MIT — free to use, modify, and distribute.
 
 ## ✦ Attribution
 
-If you use MindMesh AI as a base for your project, please include:
+If you use Maieo AI as a base for your project, please include:
 
-[![Built on MindMesh AI](https://img.shields.io/badge/Built%20on-MindMesh%20AI-7c6af7?style=flat&labelColor=0d0b1e)](https://github.com/Soumik22-tech/MindMesh)
+[![Built on Maieo AI](https://img.shields.io/badge/Built%20on-Maieo AI%20AI-7c6af7?style=flat&labelColor=0d0b1e)](https://github.com/Soumik22-tech/Maieo AI)
 
 This project was originally created by [Soumik](https://github.com/Soumik22-tech).
 

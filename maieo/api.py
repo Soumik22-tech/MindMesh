@@ -3,7 +3,7 @@ import traceback
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from mindmesh.core.debate import DebateSession
 
-class MindMeshHandler(BaseHTTPRequestHandler):
+class Maieo AIHandler(BaseHTTPRequestHandler):
     def do_OPTIONS(self):
         self.send_response(200, "ok")
         self.send_header('Access-Control-Allow-Origin', '*')
@@ -62,10 +62,10 @@ class MindMeshHandler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(json.dumps({"error": message}).encode('utf-8'))
 
-def run(server_class=HTTPServer, handler_class=MindMeshHandler, port=8000):
+def run(server_class=HTTPServer, handler_class=Maieo AIHandler, port=8000):
     server_address = ('', port)
     httpd = server_class(server_address, handler_class)
-    print(f"Starting MindMesh AI API on http://localhost:{port}...")
+    print(f"Starting Maieo AI API on http://localhost:{port}...")
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:

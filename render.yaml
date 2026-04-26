@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: mindmesh-api
+    name: maieo-api
     env: python
     buildCommand: pip install -e .
-    startCommand: uvicorn mindmesh.server:app --host 0.0.0.0 --port $PORT
+    startCommand: uvicorn maieo.server:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: GROQ_API_KEY
         sync: false

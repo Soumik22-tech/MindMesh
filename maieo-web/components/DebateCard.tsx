@@ -113,7 +113,7 @@ export default function DebateCard({
     if (navigator.share) {
       try {
         await navigator.share({
-          title: "MindMesh AI Debate",
+          title: "Maieo AI Debate",
           text: "4 AIs debated: " + fullDebate.query,
           url: shareUrl
         });

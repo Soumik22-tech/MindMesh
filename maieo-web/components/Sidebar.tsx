@@ -131,10 +131,9 @@ export default function Sidebar({
         <div className={`flex items-center mb-6 ${isCollapsed ? 'justify-center' : 'justify-between'}`}>
           <div className="flex items-center overflow-hidden">
             {!isCollapsed ? (
-              <span className="text-xl font-bold tracking-tight whitespace-nowrap">
-                <span className="text-white">Mind</span>
-                <span className="text-[#7C6AF7]">Mesh</span>
-                <span className="text-[#a78bfa] text-sm ml-2">AI</span>
+              <span className="text-xl font-bold tracking-tight whitespace-nowrap flex items-center">
+                <span className="text-[#7c6af7] font-bold">Maieo</span>
+                  <span className="text-white font-bold ml-1">AI</span>
               </span>
             ) : (
               <span className="text-xl font-bold text-[#7C6AF7]">M.</span>
@@ -330,7 +329,7 @@ export default function Sidebar({
           {!isCollapsed && (
             <div className="text-[10px] text-text-secondary text-center mt-4 opacity-60 leading-relaxed">
               <p>Developed by Soumik Majumder</p>
-              <p>Copyright © 2026 MindMesh AI. All rights reserved.</p>
+              <p>Copyright © 2026 Maieo AI. All rights reserved.</p>
             </div>
           )}
         </div>

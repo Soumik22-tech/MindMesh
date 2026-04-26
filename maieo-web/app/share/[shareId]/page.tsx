@@ -102,8 +102,8 @@ export default async function SharedDebatePage({
       {/* Banner */}
       <div className="bg-[#7c6af7]/10 border-b border-[#7c6af7]/30 py-3 px-6 flex items-center justify-between">
         <div>
-          <span className="text-[#a78bfa] font-semibold text-sm">MindMesh AI</span>
-          <span className="text-gray-400 text-sm ml-2">— This debate was created with MindMesh AI</span>
+          <span className="text-[#a78bfa] font-semibold text-sm">Maieo AI</span>
+          <span className="text-gray-400 text-sm ml-2">— This debate was created with Maieo AI</span>
         </div>
         <Link
           href="/sign-up"
