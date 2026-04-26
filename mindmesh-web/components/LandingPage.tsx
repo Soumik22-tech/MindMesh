@@ -43,7 +43,8 @@ export default function LandingPage() {
       >
         <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-4">
           <span className="text-white">Mind</span>
-          <span className="text-[#7C6AF7]">Mesh.</span>
+          <span className="text-[#7C6AF7]">Mesh</span>
+          <span className="text-[#a78bfa] text-5xl md:text-6xl ml-4">AI</span>
         </h1>
         <p className="text-lg md:text-xl text-gray-400 max-w-lg mx-auto mb-12 leading-relaxed">
           4 AI models debate your question. You get the truth.

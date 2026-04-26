@@ -65,7 +65,7 @@ class MindMeshHandler(BaseHTTPRequestHandler):
 def run(server_class=HTTPServer, handler_class=MindMeshHandler, port=8000):
     server_address = ('', port)
     httpd = server_class(server_address, handler_class)
-    print(f"Starting MindMesh API on http://localhost:{port}...")
+    print(f"Starting MindMesh AI API on http://localhost:{port}...")
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:

@@ -42,14 +42,14 @@ export default function Home() {
   // Dynamic Document Title
   useEffect(() => {
     if (status === 'idle') {
-      document.title = 'MindMesh — AI Debate Engine';
+      document.title = 'MindMesh AI — AI Debate Engine';
     } else if (status === 'complete' && activeDebate?.query) {
       const truncated = activeDebate.query.length > 30 
         ? activeDebate.query.slice(0, 30) + '...' 
         : activeDebate.query;
-      document.title = `${truncated} — MindMesh`;
+      document.title = `${truncated} — MindMesh AI`;
     } else {
-      document.title = 'Debating... — MindMesh';
+      document.title = 'Debating... — MindMesh AI';
     }
   }, [status, activeDebate]);
 
@@ -287,7 +287,8 @@ export default function Home() {
                 <div className="mb-4">
                   <h1 className="text-[4rem] md:text-[5.5rem] font-bold tracking-tight leading-tight">
                     <span className="text-white">Mind</span>
-                    <span className="text-[#7C6AF7]">Mesh.</span>
+                    <span className="text-[#7C6AF7]">Mesh</span>
+                    <span className="text-[#a78bfa] text-[2.5rem] md:text-[3.4rem] ml-3 align-middle">AI</span>
                   </h1>
                 </div>
                 <p className="text-text-secondary text-lg md:text-xl mb-10 max-w-lg mx-auto opacity-80">
@@ -445,7 +446,7 @@ export default function Home() {
               <div className="w-16 h-16 rounded-2xl bg-accent/20 flex items-center justify-center mb-4">
                 <span className="text-2xl font-bold text-accent">M</span>
               </div>
-              <h3 className="text-lg font-bold text-text-primary mb-1">MindMesh v2.0</h3>
+              <h3 className="text-lg font-bold text-text-primary mb-1">MindMesh AI v1.0.0</h3>
               <p className="text-sm text-text-secondary">Powered by cutting-edge Multi-Agent LLMs</p>
             </div>
           </div>

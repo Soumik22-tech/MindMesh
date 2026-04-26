@@ -91,7 +91,7 @@
     filter="url(#glow)"
   >Mind</text>
 
-  <!-- "Mesh." in deep lavender -->
+  <!-- "Mesh" in deep lavender -->
   <text
     x="586"
     y="195"
@@ -101,10 +101,19 @@
     fill="#7c6af7"
     letter-spacing="-3"
     filter="url(#glow)"
-  >Mesh.</text>
+  >Mesh</text>
 
-  <!-- Purple dot accent top-right of "M" -->
-  <circle cx="320" cy="92" r="7" fill="url(#dotGlow)" filter="url(#glow)"/>
+  <!-- "AI" in brighter lavender -->
+  <text
+    x="874"
+    y="195"
+    font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+    font-size="70"
+    font-weight="700"
+    fill="#a78bfa"
+    letter-spacing="-1"
+    filter="url(#glow)"
+  >AI</text>
 
   <!-- Tagline -->
   <text

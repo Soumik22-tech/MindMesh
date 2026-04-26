@@ -1,5 +1,5 @@
 """
-MindMesh FastAPI Server
+MindMesh AI FastAPI Server
 Production-ready server for Render.com deployment.
 """
 import os
@@ -17,15 +17,15 @@ class DebateRequest(BaseModel):
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    print("MindMesh API starting up...")
+    print("MindMesh AI API starting up...")
     yield
-    print("MindMesh API shutting down.")
+    print("MindMesh AI API shutting down.")
 
 
 app = FastAPI(
-    title="MindMesh API",
+    title="MindMesh AI API",
     description="Multi-agent AI debate engine",
-    version="2.0.0",
+    version="1.0.0",
     lifespan=lifespan,
 )
 
@@ -35,7 +35,7 @@ app.add_middleware(
         "http://localhost:3000",
         "http://localhost:3001",
         "https://*.vercel.app",
-        "https://mindmesh.vercel.app",
+        "https://mindmeshai.dev",
         "*",
     ],
     allow_credentials=True,
@@ -48,10 +48,17 @@ app.add_middleware(
 async def health():
     return {
         "status": "ok",
-        "project": "MindMesh",
+        "project": "MindMesh AI",
+        "version": "1.0.0",
         "author": "Soumik22-tech",
         "github": "https://github.com/Soumik22-tech/MindMesh",
-        "license": "MIT"
+        "agents": 4,
+        "models": {
+            "proposer": "llama-3.3-70b via Groq",
+            "challenger": "gemma-3-27b via Google",
+            "arbitrator": "qwen-3-235b via Cerebras",
+            "synthesizer": "gemini-2.5-flash via Google"
+        }
     }
 
 

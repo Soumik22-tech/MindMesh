@@ -133,7 +133,8 @@ export default function Sidebar({
             {!isCollapsed ? (
               <span className="text-xl font-bold tracking-tight whitespace-nowrap">
                 <span className="text-white">Mind</span>
-                <span className="text-[#7C6AF7]">Mesh.</span>
+                <span className="text-[#7C6AF7]">Mesh</span>
+                <span className="text-[#a78bfa] text-sm ml-2">AI</span>
               </span>
             ) : (
               <span className="text-xl font-bold text-[#7C6AF7]">M.</span>
@@ -327,9 +328,10 @@ export default function Sidebar({
           </div>
           
           {!isCollapsed && (
-            <p className="text-[10px] text-text-secondary text-center mt-4 opacity-50">
-              Powered by 4 AI models
-            </p>
+            <div className="text-[10px] text-text-secondary text-center mt-4 opacity-60 leading-relaxed">
+              <p>Developed by Soumik Majumder</p>
+              <p>Copyright © 2026 MindMesh AI. All rights reserved.</p>
+            </div>
           )}
         </div>
       </div>

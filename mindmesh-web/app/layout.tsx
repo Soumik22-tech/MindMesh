@@ -7,8 +7,8 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MindMesh — AI Debate Engine",
-  description: "4 AI models debate your question to give you the best answer",
+  title: "MindMesh AI — AI Debate Engine",
+  description: "4 AI models debate your question. You get the truth.",
   icons: {
     icon: "/favicon.ico",
   },
